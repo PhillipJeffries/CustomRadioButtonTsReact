@@ -1,9 +1,21 @@
 import * as React from "react";
 
+
 import './app.scss'
 
+import RadioButtonGroup from "./components/RadioButtonGroup";
+
 const App: React.FC = () => {
-  return <h2>Hi, bitch</h2>;
+
+
+  const options = ["1", "2", "3", "4"]
+
+  return (
+    <>
+      <RadioButtonGroup options={options} name="group" />
+    </>
+
+  )
 };
 
 export default App;
